@@ -11,7 +11,6 @@
       "name": "El Barrio",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/el-barrio.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -20,7 +19,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "adri-contreras",
+        "name": "Adri Contreras",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/adri-contreras.png",
+        "teamId": "el-barrio"
+      }
     }
   },
   {
@@ -35,7 +40,6 @@
       "name": "Ultimate Móstoles",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/ultimate-mostoles.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -44,7 +48,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "djmariio",
+        "name": "DjMaRiiO",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/djmariio.png",
+        "teamId": "ultimate-mostoles"
+      }
     }
   },
   {
@@ -57,9 +67,8 @@
     "team": {
       "id": "los-troncos-fc",
       "name": "Los Troncos FC",
-      "image": "https://kings-league-api.leotroche.workers.dev/static/logos/???.svg",
+      "image": "https://kings-league-api.leotroche.workers.dev/static/logos/los-troncos.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -68,7 +77,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "perxitaa",
+        "name": "Perxitaa",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/perxitaa.png",
+        "teamId": "los-troncos-fc"
+      }
     }
   },
   {
@@ -77,7 +92,28 @@
     "scoredGoals": 4,
     "concededGoals": 2,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "team": {
+      "id": "1k",
+      "name": "1K FC",
+      "image": "https://kings-league-api.leotroche.workers.dev/static/logos/1k.svg",
+      "url": "",
+      "channel": "https://twitch.tv/",
+      "coach": "???",
+      "socialNetworks": [
+        "https://www.instagram.com/elbarrioklk/?hl=es",
+        "https://www.tiktok.com/@adricontreras4",
+        "https://twitter.com/elbarrioklk_",
+        "https://www.tiktok.com/@elbarrioklk"
+      ],
+      "players": [],
+      "president": {
+        "id": "iker-casillas",
+        "name": "Iker Casillas",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/iker-casillas.png",
+        "teamId": "1k"
+      }
+    }
   },
   {
     "wins": 1,
@@ -91,7 +127,6 @@
       "name": "Saiyans FC",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/saiyans-fc.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -100,7 +135,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "thegrefg",
+        "name": "TheGrefg",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/thegrefg.png",
+        "teamId": "saiyans-fc"
+      }
     }
   },
   {
@@ -115,7 +156,6 @@
       "name": "Kunisports",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/kunisports.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -124,7 +164,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "kun-aguero",
+        "name": "Kun Agüero",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/kun-aguero.png",
+        "teamId": "kunisports"
+      }
     }
   },
   {
@@ -139,7 +185,6 @@
       "name": "Jijantes FC",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/jijantes-fc.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -148,7 +193,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "gerard-romero",
+        "name": "Gerard Romero",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/gerard-romero.png",
+        "teamId": "jijantes-fc"
+      }
     }
   },
   {
@@ -163,7 +214,6 @@
       "name": "Porcinos FC",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/porcinos-fc.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -172,7 +222,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "ibai-llanos",
+        "name": "Ibai Llanos",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/ibai-llanos.png",
+        "teamId": "porcinos-fc"
+      }
     }
   },
   {
@@ -187,7 +243,6 @@
       "name": "Rayo de Barcelona",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/rayo-barcelona.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -196,7 +251,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "spursito",
+        "name": "Spursito",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/spursito.png",
+        "teamId": "rayo-barcelona"
+      }
     }
   },
   {
@@ -211,7 +272,6 @@
       "name": "XBUYER TEAM",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/xbuyer-team.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -220,7 +280,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "hnos-buyer",
+        "name": "Hnos. Buyer",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/hnos-buyer.png",
+        "teamId": "xbuyer-team"
+      }
     }
   },
   {
@@ -235,7 +301,6 @@
       "name": "Aniquiladores FC",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/aniquiladores-fc.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -244,7 +309,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "juan-guarnizo",
+        "name": "Juan Guarnizo",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/juan-guarnizo.png",
+        "teamId": "aniquiladores-fc"
+      }
     }
   },
   {
@@ -259,7 +330,6 @@
       "name": "PIO FC",
       "image": "https://kings-league-api.leotroche.workers.dev/static/logos/pio.svg",
       "url": "",
-      "president": "???",
       "channel": "https://twitch.tv/",
       "coach": "???",
       "socialNetworks": [
@@ -268,7 +338,13 @@
         "https://twitter.com/elbarrioklk_",
         "https://www.tiktok.com/@elbarrioklk"
       ],
-      "players": []
+      "players": [],
+      "president": {
+        "id": "rivers",
+        "name": "Rivers",
+        "image": "https://kings-league-api.leotroche.workers.dev/static/presidents/rivers.png",
+        "teamId": "pio-fc"
+      }
     }
   }
 ]
