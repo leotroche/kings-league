@@ -1,4 +1,4 @@
-name = "kings-league"
+name = "kings-league-api"
 main = "src/index.js"
 compatibility_date = "2023-01-05"
 
