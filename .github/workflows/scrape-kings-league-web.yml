@@ -1,4 +1,4 @@
-name: Scrape King League Infojobs Website
+name: Scrape Kings League Infojobs Website
 
 on:
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
         with:
           version: 7.22.0
           run_install: true
-      - run:
+      - run: |
           node scraping/leaderboard.js
           git config user.name kings-league-bot
           git add -A
