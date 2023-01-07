@@ -11,16 +11,16 @@ app.get('/', (ctx) => {
   return ctx.json([
     {
       endpoint: '/leaderboard',
-      description: 'Returns Kings League leaderboard',
+      description: 'Returns Kings League leaderboard'
     },
     {
       endpoint: '/teams',
-      description: 'Returns Kings League teams',
+      description: 'Returns Kings League teams'
     },
     {
       endpoint: '/presidents',
-      description: 'Returns Kings League presidents',
-    },
+      description: 'Returns Kings League presidents'
+    }
   ])
 })
 

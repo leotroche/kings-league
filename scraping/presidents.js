@@ -24,7 +24,7 @@ const presidents = await Promise.all(
 
     const [imageInfo] = data
     const {
-      guid: { rendered: imageURL },
+      guid: { rendered: imageURL }
     } = imageInfo
 
     // fetch the image and save it to the file system

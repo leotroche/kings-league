@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio'
 import { writeDBFile, TEAMS, PRESIDENTS } from '../db/index.js'
 
 const URLS = {
-  leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/',
+  leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/'
 }
 
 async function scrape(url) {
@@ -24,7 +24,7 @@ async function getLeaderBoard() {
     scoredGoals: { selector: '.fs-table-text_6', typeOf: 'number' },
     concededGoals: { selector: '.fs-table-text_7', typeOf: 'number' },
     yellowCards: { selector: '.fs-table-text_8', typeOf: 'number' },
-    redCards: { selector: '.fs-table-text_9', typeOf: 'number' },
+    redCards: { selector: '.fs-table-text_9', typeOf: 'number' }
   }
 
   const getTeamFrom = ({ name }) => {
