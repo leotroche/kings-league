@@ -2,7 +2,10 @@ import { readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
 const DB_PATH = path.join(process.cwd(), './db/')
-const RAW_RESIDETNS = await readFile(`${DB_PATH}/raw-presidents.json`, 'utf-8').then(JSON.parse)
+const RAW_RESIDETNS = await readFile(
+  `${DB_PATH}/raw-presidents.json`,
+  'utf-8'
+).then(JSON.parse)
 
 const STATIC_PATH = path.join(process.cwd(), './assets/static/presidents/')
 
@@ -21,7 +24,7 @@ const presidents = await Promise.all(
 
     const [imageInfo] = data
     const {
-      guid: { rendered: imageURL }
+      guid: { rendered: imageURL },
     } = imageInfo
 
     // fetch the image and save it to the file system
@@ -45,4 +48,8 @@ const presidents = await Promise.all(
 )
 
 console.log('All presidents are done!')
-await writeFile(`${DB_PATH}/presidents.json`, JSON.stringify(presidents, null, 2), 'utf-8')
+await writeFile(
+  `${DB_PATH}/presidents.json`,
+  JSON.stringify(presidents, null, 2),
+  'utf-8'
+)
