@@ -1,4 +1,4 @@
-import { TEAMS } from '../db/index.js'
+import { getImageFromTeam } from '../db/index.js'
 import { cleanText } from './utils.js'
 
 const MVP_SELECTORS = {
@@ -6,11 +6,6 @@ const MVP_SELECTORS = {
   playerName: { selector: '.fs-table-text_4', typeOf: 'string' },
   gamesPlayed: { selector: '.fs-table-text_5', typeOf: 'number' },
   mvps: { selector: '.fs-table-text_6', typeOf: 'number' }
-}
-
-function getImageFromTeam({ name }) {
-  const { image } = TEAMS.find((team) => team.name === name)
-  return image
 }
 
 export async function getMVP($) {
