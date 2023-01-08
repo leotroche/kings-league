@@ -35,9 +35,7 @@ app.get('/teams', (ctx) => {
 app.get('/teams/:id', (ctx) => {
   const id = ctx.req.param('id')
   const foundTeam = teams.find((team) => team.id === id)
-  return foundTeam
-    ? ctx.json(foundTeam)
-    : ctx.json({ message: 'Team not found', status: 404 })
+  return foundTeam ? ctx.json(foundTeam) : ctx.json({ message: 'Team not found', status: 404 })
 })
 
 app.get('/presidents', (ctx) => {
@@ -53,5 +51,15 @@ app.get('/presidents/:id', (ctx) => {
 })
 
 app.get('/static/*', serveStatic({ root: './' }))
+
+app.notFound((c) => {
+  const { pathname } = new URL(c.req.url)
+
+  if (pathname.at(-1) === '/') {
+    return c.redirect(pathname.slice(0, -1))
+  }
+
+  return c.json({ message: 'Not Found' }, 404)
+})
 
 export default app
