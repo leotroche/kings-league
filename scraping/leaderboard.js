@@ -1,5 +1,5 @@
-import { writeDBFile, TEAMS, PRESIDENTS } from '../db/index.js'
-import { cleanText, scrape, URLS } from './utils.js'
+import { PRESIDENTS, TEAMS } from '../db/index.js'
+import { cleanText } from './utils.js'
 
 const LEADERBOARD_SELECTORS = {
   team: { selector: '.fs-table-text_3', typeOf: 'string' },
@@ -17,8 +17,7 @@ const getTeamFrom = ({ name }) => {
   return { ...restOfTeam, president }
 }
 
-async function getLeaderBoard() {
-  const $ = await scrape(URLS.leaderboard)
+export async function getLeaderBoard($) {
   const $row = $('table tbody tr')
 
   const leaderBoardSelectorEntries = Object.entries(LEADERBOARD_SELECTORS)
@@ -44,7 +43,3 @@ async function getLeaderBoard() {
 
   return leaderboard
 }
-
-const leaderboard = await getLeaderBoard()
-
-writeDBFile('leaderboard', leaderboard)
