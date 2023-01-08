@@ -13,10 +13,6 @@ const app = new Hono()
 app.get('/', (ctx) => {
   return ctx.json([
     {
-      endpoint: '/leaderboard',
-      description: 'Returns Kings League leaderboard'
-    },
-    {
       endpoint: '/teams',
       description: 'Returns Kings League teams'
     },
@@ -25,8 +21,20 @@ app.get('/', (ctx) => {
       description: 'Returns Kings League presidents'
     },
     {
+      endpoint: '/leaderboard',
+      description: 'Returns Kings League leaderboard'
+    },
+    {
       endpoint: '/mvp',
       description: 'Returns Kings League MVP'
+    },
+    {
+      endpoint: '/top-scorers',
+      description: 'Returns Kings League top scorers'
+    },
+    {
+      endpoint: '/top-assists',
+      description: 'Returns Kings League top assists'
     }
   ])
 })
@@ -61,7 +69,7 @@ app.get('/mvp', (ctx) => {
   return ctx.json(mvp)
 })
 
-app.get('/top-scores', (ctx) => {
+app.get('/top-scorers', (ctx) => {
   return ctx.json(topScorers)
 })
 
