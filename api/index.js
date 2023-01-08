@@ -5,6 +5,8 @@ import leaderboard from '../db/leaderboard.json'
 import teams from '../db/teams.json'
 import presidents from '../db/presidents.json'
 import mvp from '../db/mvp.json'
+import topScorers from '../db/top_scorers.json'
+import topAssists from '../db/top_assists.json'
 
 const app = new Hono()
 
@@ -29,10 +31,6 @@ app.get('/', (ctx) => {
   ])
 })
 
-app.get('/leaderboard', (ctx) => {
-  return ctx.json(leaderboard)
-})
-
 app.get('/teams', (ctx) => {
   return ctx.json(teams)
 })
@@ -55,8 +53,20 @@ app.get('/presidents/:id', (ctx) => {
     : ctx.json({ message: 'President not found', status: 404 })
 })
 
+app.get('/leaderboard', (ctx) => {
+  return ctx.json(leaderboard)
+})
+
 app.get('/mvp', (ctx) => {
   return ctx.json(mvp)
+})
+
+app.get('/top-scores', (ctx) => {
+  return ctx.json(topScorers)
+})
+
+app.get('/top-assists', (ctx) => {
+  return ctx.json(topAssists)
 })
 
 app.get('/static/*', serveStatic({ root: './' }))
