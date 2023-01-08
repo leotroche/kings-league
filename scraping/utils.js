@@ -3,6 +3,8 @@ import { writeDBFile } from '../db/index.js'
 import { getLeaderBoard } from './leaderboard.js'
 import { logError, logInfo, logSuccess } from './logs.js'
 import { getMVP } from './mvp.js'
+import { getTopAssists } from './top_assists.js'
+import { getTopScores } from './top_scorers.js'
 
 export const cleanText = (text) => {
   return text.replace(/\t|\n|\s:/g, '').replace(/.*:/g, '')
@@ -16,6 +18,14 @@ export const SCRAPINGS = {
   mvp: {
     url: 'https://kingsleague.pro/estadisticas/mvp/',
     scraper: getMVP
+  },
+  top_scorers: {
+    url: 'https://kingsleague.pro/estadisticas/goles/',
+    scraper: getTopScores
+  },
+  top_assists: {
+    url: 'https://kingsleague.pro/estadisticas/asistencias/',
+    scraper: getTopAssists
   }
 }
 
